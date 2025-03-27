@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href=css/querries.css">
+
+    <title>My first Html Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Using Semantic Tags -->
+    <!-- Setting the header and the nav bar -->
+
+    <header class="header">
+      <h1 class="logo">Nwagu</h1>
+      <navbar class="nav">
+        <ul class="nav_list">
+          <li><a class="link_item" href="#about">About</a></li>
+          <li><a class="link_item" href="#work">Work</a></li>
+          <li><a class="link_item" href="#education">Education</a></li>
+          <li><a class="link_item" href="#contact">Contact</a></li>
+        </ul>
+      </navbar>
+    </header>
+
+    <main>
+      <!-- About Me Section -->
+      <section class="hero_section">
+        <div class="container">
+          <div class="hero-box">
+            <div class="greetings">
+              <h1 class="heading"><span>Hello</span>, I'm</h1>
+              <p class="intro"><span>Tochukwu Nwagu</span>, a Web Developer</p>
+            </div>
+            <div class="images">
+              <img
+                src="./assets/images/Untitled design.png"
+                alt=""
+                class="profile"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about_section">
+        <div id="about" class="about_box">
+          <div class="text">
+            <h2 class="subheading">About Me</h2>
+            <p class="about_text">
+              An aspiring web developer with a background as a legal
+              practitioner and a passion for building user-friendly and
+              responsive web applications. Currently learning front-end and
+              back-end technologies, with hands-on experience through personal
+              projects. Strong analytical and problem-solving skills developed
+              through legal practice, combined with a keen interest in
+              technology and coding. Eager to contribute to dynamic development
+              teams and leverage legal expertise in tech-related fields.
+            </p>
+            <div class="btn">
+              <button class="cta-btn cv" type="button">Download C.V</button>
+
+              <button class="cta-btn contact" type="button">Contact Me</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Work Experience -->
+      <section class="work_section">
+        <div id="work" class="work">
+          <h2 class="subheading">Work experience</h2>
+          <p><strong>Legal Experience</strong></p>
+          <ul>
+            <strong>Corporate Legal Consultant</strong>
+            <span class="date">- 2019 to date</span>
+            <li>Draft and review corporate agreements, contracts, and MOUs.</li>
+            <li>Assist in company incorporation and regulatory compliance.</li>
+            <li>
+              Provid legal advisory services to corporate and individual
+              clients.
+            </li>
+            <li>
+              Ensure adherence to corporate governance and industry regulations.
+            </li>
+          </ul>
+          <ul>
+            <strong>Litigation Counsel</strong>
+            <span class="date">- 2015 to 2019</span>
+            <li>
+              Represented clients in court proceedings, negotiations, and
+              mediations.
+            </li>
+            <li>
+              Drafted and reviewed court documents, legal pleadings, and
+              motions.
+            </li>
+            <li>
+              Conducted legal research and case analysis for various matters.
+            </li>
+          </ul>
+
+          <ul>
+            <strong>Freelance Legal Consultant</strong>
+            <span class="date">- 2010 to 2015</span>
+
+            <li>
+              Verified documents and conducted applicant interviews for an
+              embassy.
+            </li>
+            <li>Ensured compliance with immigration and legal policies.</li>
+          </ul>
+        </div>
+      </section>
+      <!-- Resume Section -->
+      <section class="resume-section">
+        <div class="resume">
+          <h2 id="education" class="subheading">Education</h2>
+          <table border="2">
+            <tr>
+              <th>Institution</th>
+              <th>Qualification</th>
+            </tr>
+            <tr>
+              <td>Enugu State University Of Science & Technology</td>
+              <td>LLB Hons.</td>
+            </tr>
+            <tr>
+              <td>Nigerian Law School, Lagos Campus</td>
+              <td>B.L</td>
+            </tr>
+            <tr>
+              <td>GoMyCode Nigeria</td>
+              <td>Diploma in Full-stack web development</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <!-- Contact Me Section -->
+      <section class="contact-section">
+        <div class="reach_out">
+          <h2 id="contact" class="subheading">Contact Me</h2>
+          <!-- FORMS -->
+          <form action="Post">
+            <div>
+              <label for="fullName">Name:</label>
+              <input
+                class="input"
+                type="text"
+                name="name"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input
+                class="input email"
+                type="email"
+                name="email"
+                placeholder="jdoe@example.com"
+                required
+              />
+            </div>
+            <div>
+              <label for="message">Message:</label>
+              <textarea name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <p>&copy;2025 Tochukwu Nwagu</p>
+    </footer>
+  </body>
+</html>
